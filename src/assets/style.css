@@ -1,48 +1,198 @@
-*{
-    background-color: rgb(14,14,49);
+* {
+    background-color: rgb(133, 15, 135);
     color: #fff;
 }
-.titre{
+
+.titre {
     front-size: 20px;
-    color: red; 
+    color: red;
+    font-family: algerian;
+    margin: 25px;
 }
-.span1{
+
+.span1 {
     color: green;
 }
-.span2{
-color: rgb(255, 200, 0);
+
+.span2 {
+    color: rgb(255, 213, 0);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
-    border:1px solid black;
+    border: 1px solid black;
     border-radius: 12px;
-    box-shadow: 0px 0px 10px 0px blue;
-    margin-top: 2rem;
+    box-shadow: 0px 0px 10px 0px rgb(13, 152, 211);
+    margin-top: 50px;
 }
 
-ul{
-    display: flex;                                              
+ul {
+    display: flex;
     margin-top: 2rem;
     margin-left: 4rem;
-
+    padding: 5px;
+    border-radius: 12px;
 }
 
-li{
+li {
     margin-left: 6rem;
-   list-style: none
+    list-style: none
 }
-li a{
+
+li a {
     text-decoration: none;
     font-family: algerian;
     color: white;
 }
-img{
-    height: 100px;
-    width: 100px;
+
+img {
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
 }
-.hero{
+
+.hero {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    font-style: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.image {
+    box-shadow: 0px 0px 10px 0px blue;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+
+.competences {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px rgb(145, 123, 143);
+    padding: 10px;
+    margin: 0 20px;
+    text-align: center;
+    animation: animercontainer 4s infinite;
+}
+
+.container:hover {
+    box-shadow: 0px 0px 20px 10px rgb(0, 255, 255);
+    transform: scale(1.05);
+
+}
+
+@keyframes animercontainer {
+    from {
+        margin-top: 0px;
+        background: red;
+    }
+
+    to {
+        margin-top: 200px;
+
+    }
+}
+
+
+.container .box1 {
+    width: 100%;
+}
+
+
+.anime {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 200px;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxAnimation {
+    0% {
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: #fff;
+    }
+
+    25% {
+        margin-top: 0px;
+        margin-left: 250px;
+        background-color: green;
+    }
+
+    50% {
+        margin-top: 200px;
+        margin-left: 250px;
+        background-color: orange;
+    }
+
+    75% {
+        margin-top: 200px;
+        margin-left: 0px;
+        background-color: red;
+    }
+
+    100% {
+        margin-top: 0px;
+        margin-left: 0px;
+        background-color: #fff;
+    }
+}
+
+
+@keyframes shakeAnimation {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: shakeAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both;
 }
